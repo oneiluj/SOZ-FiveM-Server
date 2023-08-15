@@ -89,7 +89,7 @@ export class SeatAnimationProvider {
             SeatsTargetList,
             [
                 {
-                    label: "S'asseoir",
+                    label: "S'asseoir sur la chaise",
                     icon: 'fas fa-chair',
                     action: async entity =>
                         this.playSitAnimation(entity, 'PROP_HUMAN_SEAT_CHAIR_MP_PLAYER', true, true),
