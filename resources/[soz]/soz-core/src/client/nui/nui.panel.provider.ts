@@ -67,13 +67,14 @@ export class NuiPanelProvider {
 
     @OnNuiEvent(NuiEvent.PanelClosed)
     public async onPanelClosed() {
+        this.animationService.stop();
+
         if (!this.tablet) {
             return;
         }
 
         DeleteEntity(this.tablet);
         this.tablet = null;
-        this.animationService.stop();
     }
 
     @OnEvent(ClientEvent.NUI_HIDE_PANEL)

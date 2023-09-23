@@ -232,3 +232,8 @@ export const SeatsTargetList = [
     2037887057,
     -1215681419,
 ];
+export const ComputerTargetList = [
+    GetHashKey('prop_monitor_w_large'),
+    GetHashKey('prop_monitor_03b'),
+    GetHashKey('prop_laptop_01a')
+];
